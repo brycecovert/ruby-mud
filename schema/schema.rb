@@ -1,4 +1,4 @@
-# This file is part of RubyMud.
+ This file is part of RubyMud.
 # 
 # RubyMud is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

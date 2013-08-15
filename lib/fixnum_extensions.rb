@@ -26,7 +26,7 @@ class Fixnum
   end
 
   def spread
-    ((self * 0.75).round..(self * 1.25).round).to_a.rand
+    ((self * 0.75).round..(self * 1.25).round).to_a.sample
   end
 end
 

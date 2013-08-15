@@ -3,7 +3,8 @@ require 'active_record'
 class Item < ActiveRecord::Base
   belongs_to :contents_slot, :class_name => 'Slot', :foreign_key => 'contents_slot_id'
 
-  def after_initialize
+  after_initialize :setup_item
+  def setup_item
     return if item_type.nil?
     item_type_name = "#{item_type.capitalize}ItemType".to_sym
     extend self.class.const_get(item_type_name)

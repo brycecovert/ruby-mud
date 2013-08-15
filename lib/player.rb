@@ -34,9 +34,7 @@ class Player < ActiveRecord::Base
     get_class.to_hit_ac_at_level level
   end
 
-  def after_initialize
-    initialize_character
-  end
+  after_initialize :initialize_character
 
   def room_description
     short_description + " is here."

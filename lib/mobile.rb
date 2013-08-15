@@ -13,7 +13,8 @@ class Mobile < ActiveRecord::Base
     return mana_dice.nil? ? nil : mana_dice.to_dice
   end
 
-  def after_initialize
+  after_initialize :setup_mobile
+  def setup_mobile
     initialize_character
     self.room = World.instance.rooms[room_id]
     room.characters.push self unless World.instance.rooms.nil? or room.nil?
