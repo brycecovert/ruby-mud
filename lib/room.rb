@@ -31,7 +31,8 @@ class Room  < ActiveRecord::Base
     slot.contents
   end
 
-  def after_initialize
+  after_initialize :setup_links
+  def setup_links
     self.characters = Array.new
     self.slot = Slot.new(:name => "#{title}'s items") if slot.nil?
   end

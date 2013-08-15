@@ -1,6 +1,6 @@
 require 'singleton'
 require "socket"
-require "activerecord"
+require "active_record"
 require 'range_extensions'
 require 'dice'
 require 'slot'

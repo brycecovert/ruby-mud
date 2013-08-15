@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with RubyMud.  If not, see <http://www.gnu.org/licenses/>.
 # 
-require 'activerecord'
+require 'active_record'
 
-ActiveRecord::Base.establish_connection(:adapter => 'mysql', :database => 'RubyMud', :user => 'root', :password => 'yagni')
+ActiveRecord::Base.establish_connection(:adapter => 'sqlite3', :database => './dev.sqlite')
 

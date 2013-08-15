@@ -1,5 +1,6 @@
+$LOAD_PATH << '.'
 $LOAD_PATH.unshift File.dirname(__FILE__) + "/lib"
-require 'schema/schema.rb'
+require './schema/schema'
 require 'rake/testtask'
 
 task :default => ["test_data"]
@@ -10,7 +11,7 @@ end
 
 task :test_data => ["schema"] do
   puts "inserting test data"
-  require 'schema/load_rooms.rb'
+  require './schema/load_rooms.rb'
   load_area "schema/areas/midgaard.are"
 end
 

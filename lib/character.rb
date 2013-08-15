@@ -121,13 +121,13 @@ module Character
 
   def status
     (case (self.hp.to_f / self.max_hp) * 100
-      when 100: "#{name} is in excellent condition."
-      when 90...100: "#{name} has a few scratches."
-      when 75...90: "#{name} has some small wounds and bruises."
-      when 50...75: "#{name} has quite a few wounds."
-      when 30...50: "#{name} has some big nasty wounds and scratches."
-      when 15...30: "#{name} looks pretty hurt."
-      when 0...15: "#{name} is in awful condition."
+      when 100; "#{name} is in excellent condition."
+      when 90...100; "#{name} has a few scratches."
+      when 75...90; "#{name} has some small wounds and bruises."
+      when 50...75; "#{name} has quite a few wounds."
+      when 30...50; "#{name} has some big nasty wounds and scratches."
+      when 15...30; "#{name} looks pretty hurt."
+      when 0...15; "#{name} is in awful condition."
       else "#{name} is bleeding to death."
     end).capitalize
   end

@@ -13,7 +13,7 @@
 # You should have received a copy of the GNU General Public License
 # along with RubyMud.  If not, see <http://www.gnu.org/licenses/>.
 # 
-require 'activerecord'
+require 'active_record'
 class Player < ActiveRecord::Base
   include Character
   has_and_belongs_to_many :slots, :class_name=>'Slot', :join_table=>'players_slots'

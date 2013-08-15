@@ -1,4 +1,4 @@
-require 'activerecord'
+require 'active_record'
 
 class Mobile < ActiveRecord::Base
   include Character

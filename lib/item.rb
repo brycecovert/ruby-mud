@@ -1,4 +1,4 @@
-require 'activerecord'
+require 'active_record'
 
 class Item < ActiveRecord::Base
   belongs_to :contents_slot, :class_name => 'Slot', :foreign_key => 'contents_slot_id'
