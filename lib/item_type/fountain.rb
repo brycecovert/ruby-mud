@@ -1,0 +1,2 @@
+module FountainItemType
+end

@@ -1,0 +1,25 @@
+--- 
+warrior: !ruby/object:CharacterClass 
+  name: Warrior
+  to_hit_ac: !ruby/range 
+    begin: 17
+    end: -10
+    excl: false
+mage: !ruby/object:CharacterClass 
+  name: Mage
+  to_hit_ac: !ruby/range 
+    begin: 20
+    end: 6
+    excl: false
+cleric: !ruby/object:CharacterClass 
+  name: Cleric
+  to_hit_ac: !ruby/range 
+    begin: 19
+    end: 2
+    excl: false
+thief: !ruby/object:CharacterClass 
+  name: Thief
+  to_hit_ac: !ruby/range 
+    begin: 19
+    end: -4
+    excl: false

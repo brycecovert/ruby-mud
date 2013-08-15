@@ -1,0 +1,2 @@
+module LightItemType
+end

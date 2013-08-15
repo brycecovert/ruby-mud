@@ -1,0 +1,89 @@
+--- 
+- !ruby/object:Command 
+  command: :go_south
+  regex: !ruby/regexp /^s$/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :go_north
+  regex: !ruby/regexp /^n$/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :go_west
+  regex: !ruby/regexp /^w$/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :go_east
+  regex: !ruby/regexp /^e$/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :go_up
+  regex: !ruby/regexp /^u$/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :go_down
+  regex: !ruby/regexp /^d$/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :gossip
+  regex: !ruby/regexp /(gossip|gos)/
+  exec_while_sleeping: true
+- !ruby/object:Command 
+  command: :get
+  regex: !ruby/regexp /get/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :who
+  regex: !ruby/regexp /who/
+  exec_while_sleeping: true
+- !ruby/object:Command 
+  command: :quit
+  regex: !ruby/regexp /quit/
+  exec_while_sleeping: true
+- !ruby/object:Command 
+  command: :say
+  regex: !ruby/regexp /say/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :hit
+  regex: !ruby/regexp /^(hit|h|kill|k|murder|m)$/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :inv
+  regex: !ruby/regexp /(inv|inventory)/
+  exec_while_sleeping: true
+- !ruby/object:Command 
+  command: :wear
+  regex: !ruby/regexp /wear/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :look
+  regex: !ruby/regexp /look/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :eq
+  regex: !ruby/regexp /eq/
+  exec_while_sleeping: true
+- !ruby/object:Command 
+  command: :flee
+  regex: !ruby/regexp /flee/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :go_to_sleep
+  regex: !ruby/regexp /^sleep$/
+  exec_while_sleeping: true
+- !ruby/object:Command 
+  command: :wake_up
+  regex: !ruby/regexp /^wake$/
+  exec_while_sleeping: true
+- !ruby/object:Command 
+  command: :drop
+  regex: !ruby/regexp /^drop$/
+  exec_while_sleeping: false
+- !ruby/object:Command 
+  command: :score
+  regex: !ruby/regexp /^sc$/
+  exec_while_sleeping: true
+- !ruby/object:Command 
+  command: :put
+  regex: !ruby/regexp /^put$/
+  exec_while_sleeping: false

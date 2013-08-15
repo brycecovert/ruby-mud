@@ -1,0 +1,66 @@
+--- 
+dwarf: !ruby/object:Race
+  max_con: 21
+  max_dex: 14
+  max_int: 16
+  max_str: 20
+  max_wis: 19
+  start_con: 15
+  start_dex: 10
+  start_hp: 200
+  start_int: 12
+  start_mana: 20
+  start_str: 14
+  start_wis: 14
+elf: !ruby/object:Race
+  max_con: 15
+  max_dex: 21
+  max_int: 20
+  max_str: 16
+  max_wis: 21
+  start_con: 11
+  start_dex: 15
+  start_hp: 200
+  start_int: 13
+  start_mana: 20
+  start_str: 12
+  start_wis: 15
+human: !ruby/object:Race
+  max_con: 18
+  max_dex: 18
+  max_int: 18
+  max_str: 18
+  max_wis: 18
+  start_con: 13
+  start_dex: 13
+  start_hp: 200
+  start_int: 13
+  start_mana: 13
+  start_str: 13
+  start_wis: 13
+giant: !ruby/object:Race
+  max_con: 20
+  max_dex: 15
+  max_int: 15
+  max_str: 22
+  max_wis: 18
+  start_con: 14
+  start_dex: 11
+  start_hp: 200
+  start_int: 11
+  start_mana: 20
+  start_str: 16
+  start_wis: 13
+dragon: !ruby/object:Race
+  max_con: 25
+  max_dex: 25
+  max_int: 25
+  max_str: 25
+  max_wis: 25
+  start_con: 25
+  start_dex: 25
+  start_hp: 200
+  start_int: 25
+  start_mana: 25
+  start_str: 25
+  start_wis: 25

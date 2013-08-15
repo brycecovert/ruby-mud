@@ -1,0 +1,2 @@
+module BoatItemType
+end
