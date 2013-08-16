@@ -12,18 +12,30 @@ git, rvm
 Setup
 =========
 
+Clone the repo:
+```
 git clone https://github.com/brycecovert/ruby-mud.git 
+```
 
-rvm gemset create ruby-mud
-rvm gemset use ruby-mud
-gem install bundler
-bundle install
+Install dependencies:
+```
+$ rvm gemset create ruby-mud
+$ rvm gemset use ruby-mud
+$ gem install bundler
+$ bundle install
+```
 
 Create the dev db:
-rake # This creates a simple db and imports an area from rom
+```
+$ rake # This creates a simple db and imports an area from rom
+```
 
 Start the server:
-ruby lib/socket_server.rb
+```
+$ ruby lib/socket_server.rb
+```
 
 Connect:
-telnet localhost:2000
+```
+$ telnet localhost:2000
+```
